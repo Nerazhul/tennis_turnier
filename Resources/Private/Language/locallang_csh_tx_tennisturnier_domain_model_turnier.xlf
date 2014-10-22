@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-10-21T11:11:27Z" product-name="tennis_turnier">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>Name des Turniers</source>
+			</trans-unit>
+			<trans-unit id="datum.description">
+				<source>Wann findet das Turnier statt.</source>
+			</trans-unit>
+			<trans-unit id="ort.description">
+				<source>Wo findet das Turnier statt.</source>
+			</trans-unit>
+			<trans-unit id="spieler.description">
+				<source>Ein Turnier kann viele Spieler haben.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

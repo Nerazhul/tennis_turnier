@@ -1,0 +1,71 @@
+
+plugin.tx_tennis_turnier {
+	view {
+		templateRootPath = {$plugin.tx_tennisturnier.view.templateRootPath}
+		partialRootPath = {$plugin.tx_tennisturnier.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_tennisturnier.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = 2
+                recursive = 1
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+
+        settings{
+                blog {
+                        max = 5
+                }
+        }
+}
+
+plugin.tx_tennisturnier._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-tennisturnier table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-tennisturnier table th {
+		font-weight:bold;
+	}
+
+	.tx-tennisturnier table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)
+
+
+module.tx_tennisturnier < plugin.tx_tennisturnier
+
+page {
+        includeCSS {
+                bootstrap = EXT:tennisturnier/Resources/Public/Bootstrap/css/bootstrap.min.css
+                tennisturnier = EXT:tennisturnier/Resources/Public/Css/tennisturnier.css
+        }
+        includeJSlibs {
+                jquery = //code.jquery.com/jquery.js
+                jquery.internal = 1
+                bootstrap = EXT:tennisturnier/Resources/Public/Bootstrap/js/bootstrap.min.js
+        }
+}

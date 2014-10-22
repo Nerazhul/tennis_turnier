@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-10-21T11:11:27Z" product-name="tennis_turnier">
+		<header/>
+		<body>
+			<trans-unit id="einzel.description">
+				<source>Einzel spielen</source>
+			</trans-unit>
+			<trans-unit id="doppel.description">
+				<source>Doppel spielen</source>
+			</trans-unit>
+			<trans-unit id="mixed.description">
+				<source>Mixed spielen.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
